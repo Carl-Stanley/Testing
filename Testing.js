@@ -1,7 +1,7 @@
 // Testing JS 3
 
 // Global 
-/*
+
 function sayName(name) {
 
     console.log(this);
@@ -26,7 +26,7 @@ const myObj = {
 
 myObj.sayHello('Carl');
 
-*/
+
 
 //  New Binding 
 
