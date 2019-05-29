@@ -2,7 +2,17 @@
 
 // Declare the class 
 
+// Named 
 class Rectangle {
+    constructor (height,width) {
+        this.height = height;
+        this.width = width;
+    }
+}
+
+
+// unnnamed 
+let Rectangle2 = class {
     constructor (height,width) {
         this.height = height;
         this.width = width;
