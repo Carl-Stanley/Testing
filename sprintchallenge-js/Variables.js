@@ -2,6 +2,8 @@
 // Var let const differences
 // Anatomy of a variable Declaration
 // Variable Scope link https://wesbos.com/javascript-scoping/
+// Var can be declared twice, let and const cannot. 
+// Var and Let will allow declared variables to be reassigned. Const will not. 
 var myVar = 'example';
 
 // Values - strings numbers Objects +;
@@ -75,3 +77,30 @@ if(age1 > 12) {
 
 // console.log(dogYears1); // Error
 
+// Block Scoping with Const. 
+var age2 = 100;
+if(age2 > 12) {
+  const dogYears2 = age * 7;
+  console.log(`You are ${dogYears2} dog years old!`);
+}
+
+//console.log(dogYears2); // Error
+
+
+function myFunction() {
+  
+  if (true) {
+    
+    // block scope here
+    let letScope = "Yes, we can use let!";
+    var varScope = "Yes, we can use var!"; 
+    console.log("Can we access let here? " + letScope);
+    console.log("Can we access var here? " + varScope);
+  }
+  
+   // function scope here
+  console.log("Can we access var in function scope? " + varScope);
+  //console.log("Can we access let in function scope? " + letScope); // error
+}
+
+myFunction();
