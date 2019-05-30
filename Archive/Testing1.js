@@ -7,15 +7,17 @@ class Person {
     }
 
     speak() {
-        console.log(`Hello my name is ${this.name}, I am from ${this.location}.`);
+
+        console.log("test");
+        //console.log(`Hello my name is ${this.name}, I am from ${this.location}.`);
     } 
 }
 
 
 // Class Student
 class Student extends Person {
-    constructor(previousBackground,className,favSubjects) {
-        super();
+    constructor(name, age, location,previousBackground,className,favSubjects) {
+        super(name,age,location);
         this.previousBackground = previousBackground;
         this.className = className;
         this.favSubjects = favSubjects;
