@@ -68,3 +68,20 @@ const iterator = function(item,index) {
 
 newforEach(elements,iterator);
 newforEach(elements,iterator);
+
+function showFirst(array,callback) {
+    callback(array[0]); 
+}
+
+function showLength(list,cb) {
+    cb(list.length);
+}
+
+showFirst(elements,(firstItem) => {
+    console.log(firstItem)
+})
+
+showLength(elements, (lengthOfList) => {
+    console.log(lengthOfList);
+})
+
