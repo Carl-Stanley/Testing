@@ -85,3 +85,11 @@ showLength(elements, (lengthOfList) => {
     console.log(lengthOfList);
 })
 
+const newArray = elements.map((elements,index) => {
+
+    return `${elements}  ${index}`;
+
+});
+
+console.log(newArray);
+console.log(newArray);
