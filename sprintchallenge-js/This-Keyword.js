@@ -41,9 +41,10 @@ function CordialPerson(greeter) {
   newman.speak();
 
   // Principle 4: Explicit binding 
- // Whenever JavaScript’s call or apply method is used, this is explicitly defined.
+ // Whenever JavaScript’s call,apply or bind method is used, this is explicitly defined.
 
- jerry.call(newman);
- newman.apply(jerry);
+ jerry.speak.call(newman);
+ newman.speak.apply(jerry);
+ jerry.speak.bind(newman);
 
- //.bind also.
+ 
