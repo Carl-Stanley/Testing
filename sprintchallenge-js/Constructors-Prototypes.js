@@ -134,5 +134,12 @@ const newBanana = new banana({
     calories: 0.1
 });
 
+
+//achieve inheritance from fruit object // Errored out
+//banana.prototype = Object.create(fruit.prototype);
+
 console.log(newBanana);
+
 console.log(newBanana.checkIfMonkeysLikeIt());
+
+//console.log(newBanana.shipped('Costa Rica'));
