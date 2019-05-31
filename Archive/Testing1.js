@@ -1,26 +1,24 @@
 // Class Person 
 class Person {
-    constructor(name,age,location){
-        this.name = name;
-        this.age = age;
-        this.location = location;
+    constructor(personAttributes){
+        this.name = personAttributes.name;
+        this.age = personAttributes.age;
+        this.location = personAttributes.location;
     }
 
-    speak() {
-
-        console.log("test");
-        //console.log(`Hello my name is ${this.name}, I am from ${this.location}.`);
+    speak() {        
+        console.log(`Hello my name is ${this.name}, I am from ${this.location}.`);
     } 
 }
 
 
 // Class Student
 class Student extends Person {
-    constructor(name, age, location,previousBackground,className,favSubjects) {
-        super(name,age,location);
-        this.previousBackground = previousBackground;
-        this.className = className;
-        this.favSubjects = favSubjects;
+    constructor(personAttributes) {
+        super(personAttributes);
+        this.previousBackground = personAttributes.previousBackground;
+        this.className = personAttributes.className;
+        this.favSubjects = personAttributes.favSubjects;
     }
 
     listsSubjects() {
@@ -51,5 +49,69 @@ const fred = new Student({
   favSubjects: ['Video Gaming 101','Astronomy 101','JavaScript']
 });
 
-console.log(fred);
-console.log(fred.name);
+//console.log(fred);
+
+//fred.speak();
+
+// Class Instructor
+class Instructor extends Person {
+    constructor(personAttributes){
+        super(personAttributes);
+        this.specialty = personAttributes.specialty;
+        this.favLanguage = personAttributes.favLanguage; 
+        this.catchPhrase = personAttributes.catchPhrase;
+    }
+
+    demo(subject) {
+
+        console.log(`Today we are learning about ${subject}`);
+
+    }
+
+    grade(student,subject) {
+
+        console.log(`${student} receives a perfect score on ${subject}`);
+
+    }
+}
+
+const Dan = new Instructor({
+    name: 'Dan',
+    location: 'Levi, UT',
+    age: 35,
+    specialty: 'Hamonica',
+    favLanguage: 'C#',
+    catchPhrase: 'I feel the need for speed!'
+  });
+
+  //Dan.speak();
+
+  //console.log(Dan);
+
+ // Class Project Manager 
+class ProjectManager extends Person {
+    constructor(personAttributes) {
+        super(personAttributes);
+        this.gradClassName = personAttributes.gradClassName;
+        this.favInstructor = personAttributes.favInstructor;
+    }
+    standUp(channel){
+        console.log(`${this.name} announces to ${channel}, @channel standy times! `);
+    }
+
+    debugsCode(student,subject){
+        console.log(`${this.name} debugs ${student}'s code on ${subject}`);
+    }
+
+} 
+
+const Jasmine = new ProjectManager({
+    name: 'Jasmine',
+    location: 'Dallas, TX',
+    age: 23,
+    gradClassName: 'WebPT04',
+    favInstructor: 'Dan'
+  });
+
+ // Jasmine.speak();
+  // console.log(Jasmine);
