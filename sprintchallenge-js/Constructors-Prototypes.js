@@ -93,14 +93,14 @@ function fruit(fruitAttributes){
     this.calories = fruitAttributes.calories;
 }
 
-banana = new fruit({
+banana1 = new fruit({
     type: 'tree',
     name: 'banana',
     isRipe: true,
     calories: 100
 });
 
-console.log(banana);
+console.log(banana1);
 
 fruit.prototype.shipped =  function(destination) {
     console.log(`${this.name} was shipped via ${destination}.`)
@@ -110,5 +110,29 @@ fruit.prototype.calculateCals = function() {
     console.log(`Calories in ${this.name} are ${this.calories * 200}`);
 };
 
-console.log(banana.shipped('Hawaii'));
-console.log(banana.calculateCals());
+console.log(banana1.shipped('Hawaii'));
+console.log(banana1.calculateCals());
+
+// banana  
+function banana(bananaAttrs) {
+    fruit.call(this,bananaAttrs);
+    this.doMonkeysLikeIt = bananaAttrs.doMonkeysLikeIt;
+} 
+
+banana.prototype.checkIfMonkeysLikeIt = function() {
+    if(this.doMonkeysLikeIt) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+const newBanana = new banana({
+    doMonkeysLikeIt: true,
+    type: 'Tree',
+    isRipe: false,
+    calories: 0.1
+});
+
+console.log(newBanana);
+console.log(newBanana.checkIfMonkeysLikeIt());
