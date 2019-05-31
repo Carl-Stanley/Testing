@@ -1,0 +1,3 @@
+// Main 
+
+console.log(typeof []);

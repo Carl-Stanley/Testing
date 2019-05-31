@@ -56,5 +56,10 @@ for(item in array1){
     console.log(array1[item]);
 }
 
+console.log(array1.length); // length of array
+
+console.log(array1.length - 1); // Index of last item in array
+ 
+
 
 
