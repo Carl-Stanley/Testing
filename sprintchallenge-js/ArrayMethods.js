@@ -41,7 +41,19 @@ const mapCityStates = data.map((state) => {
 
 });
 
+// Another .map example. 
+
+const arrayOfPops = data.map((state) =>{
+
+    return state.population;
+
+});
+
+
+
 console.log(mapCityStates);
+
+console.log(arrayOfPops);
 
 // .Filter - returns a new array of elements. filters based upon a condition. 
 
