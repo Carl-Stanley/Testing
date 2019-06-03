@@ -74,15 +74,15 @@ Child.prototype = Object.create(Person.prototype);
 console.log(Child);
 
 // Errors out. 
-/* 
+/*
 const pebbles = new Child({
     age: 3,
     name: 'pebbles',
     homeTown: 'Bedrock'
 });
-*/
-//console.log(pebbles);
 
+console.log(pebbles);
+*/
 // Example training kit. 
 // fruit constructor type, name, isRipe, calories
 
