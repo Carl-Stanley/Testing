@@ -1,4 +1,5 @@
 // Main 
+/*
 "use strict";
 
 fetch("./JSON/content.json")
@@ -8,3 +9,5 @@ fetch("./JSON/content.json")
     .then(function(){
         console.log(data);
     });
+*/
+
