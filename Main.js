@@ -1,3 +1,1 @@
 // Main 
-
-console.log(typeof []);
