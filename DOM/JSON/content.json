@@ -1,6 +1,5 @@
 {  
-    "middle-img-src": "img/mid-page-accent.jpg",
-    "img-src": "img/logo.png",
+    
 
 "mainContent": [{
         "ID": 1,
@@ -43,12 +42,12 @@
   },
 
 "navigation":   {
-    "nav-item-1": "Services",
-    "nav-item-2": "Product",
-    "nav-item-3": "Vision",
-    "nav-item-4": "Features",
-    "nav-item-5": "About",
-    "nav-item-6": "Contact"      
+    "navitem1": "Services",
+    "navitem2": "Product",
+    "navitem3": "Vision",
+    "navitem4": "Features",
+    "navitem5": "About",
+    "navitem6": "Contact"      
 }
 
 }
