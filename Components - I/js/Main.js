@@ -1,3 +1,5 @@
+
+/*
 const buttons = document.querySelectorAll('.button');
 
 class Button {
@@ -10,11 +12,13 @@ class Button {
     alert('Mouse attacked me!');
   } 
 }
+*/
 
-/*
+
 const btn1 = document.getElementsByClassName("button")[0];
 const btn2 = document.getElementsByClassName("button")[1];
 const btn3 = document.getElementsByClassName("button")[2];
+const btn4 = document.getElementsByClassName("button")[3];
 
 btn1.addEventListener('mouseover',function(event){ 
 
@@ -35,4 +39,11 @@ btn3.addEventListener('click',function(event){
     alert('You clicked me!');
 
 });
-*/
+
+// Click 
+btn4.addEventListener('click',function(event){ 
+
+  alert('You clicked me!');
+
+});
+
