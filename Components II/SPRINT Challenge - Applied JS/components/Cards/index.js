@@ -120,3 +120,6 @@ function createArticle(articleContent,articleName) {
 
 getArticleData(url1);
 
+let theCards = document.getElementsByClassName('card');
+
+console.log(theCards);
