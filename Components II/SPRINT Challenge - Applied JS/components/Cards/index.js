@@ -120,8 +120,9 @@ function createArticle(articleContent,articleName) {
 
 getArticleData(url1);
 
-//let theCards =  //[...document.querySelectorAll('.card')]
+let theCards =  document.getElementsByClassName('card');
 
-///let cardArray = Array.prototype.slice.call(theCards);
 
-//console.log(theCards);
+console.log(theCards);
+
+
