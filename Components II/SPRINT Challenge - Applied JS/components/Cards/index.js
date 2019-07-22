@@ -75,7 +75,9 @@ function createArticle(articleContent,articleName) {
         // Create 4 DIVS and assign Class Names
         let newDiv0 = document.createElement('div');
         newDiv0.classList.add('card'); 
-        
+        newDiv0.setAttribute('data-article', articleName);
+        newDiv0.setAttribute('data-visible', 'True');
+
         let newDiv1 = document.createElement('div');
         newDiv1.classList.add('headline'); 
         newDiv1.innerText = articleContent[articleName][i][y];
